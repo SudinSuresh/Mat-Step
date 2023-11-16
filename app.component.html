@@ -1,0 +1,19 @@
+<mat-horizontal-stepper>
+  <!-- Step 1 -->
+  <mat-step label="Step 1" [aria-labelledby]="firstStep ? 'disabled_af' : ''">
+    <h1>Step 1</h1>
+    <button class="btn btn-success" (click)="GoNext(0)" matStepperNext>Next</button>
+  </mat-step>
+
+  <!-- Step 2 -->
+  <mat-step label="Step 2" [aria-labelledby]="secondStep ? 'disabled_af' : ''">
+    <h1>Step 2</h1>
+    <button class="btn btn-primary" (click)="GoNext(1)" matStepperNext>Next</button>
+  </mat-step>
+
+  <!-- Step 3 -->
+  <mat-step label="Step 3" [aria-labelledby]="secondStep ? 'disabled_af' : ''">
+    <h1>Step 3</h1>
+  </mat-step>
+</mat-horizontal-stepper>
+

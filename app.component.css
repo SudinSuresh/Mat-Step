@@ -1,0 +1,6 @@
+::ng-deep .mat-step-header[aria-labelledby="disabled_af"] {
+  pointer-events: none !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+  background-color: pink /* remove this line when in prod. Its just there to prove the concept*/
+}
